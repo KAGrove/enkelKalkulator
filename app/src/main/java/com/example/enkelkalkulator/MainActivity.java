@@ -26,12 +26,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 float innverdi1 = Float.parseFloat(tekst1.getText().toString());
                 float innverdi2 = Float.parseFloat(tekst2.getText().toString());
-                resultat.setText(String.valueOf(convertAddisjon(innverdi1, innverdi2)));
+                resultat.setText(String.valueOf(innverdi1 + innverdi2));
             }
         });
     }
-    float convertAddisjon(float innverdi1, float innverdi2) {
-        return (innverdi1 + innverdi2);
-    }
-
 }
