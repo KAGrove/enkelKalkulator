@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         EditText tekst2 = (EditText) findViewById(R.id.temp2);
         TextView resultat = (TextView) findViewById(R.id.temp3);
         Button addisjonKnapp = (Button) findViewById(R.id.tilAddisjon);
-        // Button subtraksjonKnapp = (Button) findViewById(R.id.tilSubtraksjon);
-        // Button multiplikasjonKnapp = (Button) findViewById(R.id.tilAddisjon);
-        // Button divisjonKnapp = (Button) findViewById(R.id.tilSubtraksjon);
+        Button subtraksjonKnapp = (Button) findViewById(R.id.tilSubtraksjon);
+        Button multiplikasjonKnapp = (Button) findViewById(R.id.tilMultiplikasjon);
+        Button divisjonKnapp = (Button) findViewById(R.id.tilDivisjon);
 
         addisjonKnapp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +27,33 @@ public class MainActivity extends AppCompatActivity {
                 float innverdi1 = Float.parseFloat(tekst1.getText().toString());
                 float innverdi2 = Float.parseFloat(tekst2.getText().toString());
                 resultat.setText(String.valueOf(innverdi1 + innverdi2));
+            }
+        });
+
+        subtraksjonKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float innverdi1 = Float.parseFloat(tekst1.getText().toString());
+                float innverdi2 = Float.parseFloat(tekst2.getText().toString());
+                resultat.setText(String.valueOf(innverdi1 - innverdi2));
+            }
+        });
+
+        multiplikasjonKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float innverdi1 = Float.parseFloat(tekst1.getText().toString());
+                float innverdi2 = Float.parseFloat(tekst2.getText().toString());
+                resultat.setText(String.valueOf(innverdi1 * innverdi2));
+            }
+        });
+
+        divisjonKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float innverdi1 = Float.parseFloat(tekst1.getText().toString());
+                float innverdi2 = Float.parseFloat(tekst2.getText().toString());
+                resultat.setText(String.valueOf(innverdi1 / innverdi2));
             }
         });
     }

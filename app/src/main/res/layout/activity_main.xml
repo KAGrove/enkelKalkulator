@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/multiplikasjon"/>
     <Button
-        android:id="@+id/tilFahrenheit"
+        android:id="@+id/tilDivisjon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/divisjon"/>
