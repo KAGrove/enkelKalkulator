@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button subtraksjonKnapp = (Button) findViewById(R.id.tilSubtraksjon);
         Button multiplikasjonKnapp = (Button) findViewById(R.id.tilMultiplikasjon);
         Button divisjonKnapp = (Button) findViewById(R.id.tilDivisjon);
+        Button resetKnapp = (Button) findViewById(R.id.reset);
 
         addisjonKnapp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
                 float innverdi1 = Float.parseFloat(tekst1.getText().toString());
                 float innverdi2 = Float.parseFloat(tekst2.getText().toString());
                 resultat.setText(String.valueOf(innverdi1 / innverdi2));
+            }
+        });
+
+        resetKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tekst1.setText("");
+                tekst2.setText("");
+                resultat.setText("");
             }
         });
     }

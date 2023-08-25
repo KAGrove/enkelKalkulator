@@ -4,4 +4,5 @@
     <string name="subtraksjon">Minus</string>
     <string name="multiplikasjon">Ganger</string>
     <string name="divisjon">Delt på</string>
+    <string name="resetting">Reset alt</string>
 </resources>
