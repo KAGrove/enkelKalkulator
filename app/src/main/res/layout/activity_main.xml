@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp2"/>
+    <Button
+        android:id="@+id/tilAddisjon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addisjon"/>
+    <Button
+        android:id="@+id/tilSubtraksjon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtraksjon"/>
+    <Button
+        android:id="@+id/tilMultiplikasjon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplikasjon"/>
+    <Button
+        android:id="@+id/tilFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/divisjon"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp3"
+        android:text=""
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"/>
+</LinearLayout>

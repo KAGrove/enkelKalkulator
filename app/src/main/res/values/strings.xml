@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">enkelKalkulator</string>
+    <string name="addisjon">Pluss</string>
+    <string name="subtraksjon">Minus</string>
+    <string name="multiplikasjon">Ganger</string>
+    <string name="divisjon">Delt på</string>
+</resources>
